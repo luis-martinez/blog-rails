@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   root "articles#index"
   
-  get "/articles", to: "articles#index"
-  get "/articles/:id", to: "articles#show"
+  # get "/articles", to: "articles#index"
+  # get "/articles/:id", to: "articles#show"
+  # Maps all the conventional routes for a collection of resources (articles)
+  resources :articles
 end
